@@ -182,6 +182,69 @@ h2 {
   margin: 0 auto;
 }
 
+#sugestao {
+  background-color: #f8f8f8;
+  padding: 60px 20px;
+}
+
+#sugestao h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.form-sugestao {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-sugestao label,
+.form-sugestao legend {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.form-sugestao input[type="text"],
+.form-sugestao input[type="number"],
+.form-sugestao select,
+.form-sugestao textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.form-sugestao textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-sugestao fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.form-sugestao button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-sugestao button:hover {
+  background-color: #0056b3;
+}
+
 .contato {
   padding: 2rem;
   text-align: center;

@@ -19,6 +19,7 @@
         <li><a href="#seção1">Home</a></li>
         <li><a href="#seção2">Cardápio</a></li>
         <li><a href="#seção3">Sobre nós</a></li>
+        <li><a href="#sugestao">Sugestão</a></li>
         <li><a href="#seção4">Contato</a></li>
       </ul>
     </nav>
@@ -108,6 +109,35 @@
     <div class="sobre-banner">
       <h2>Sobre Nós</h2>
       <p>Nossa pizzaria é dedicada a criar as melhores pizzas do mundo, com ingredientes frescos e receitas exclusivas.</p>
+    </div>
+  </section>
+
+  <section id="sugestao">
+    <div class="container">
+      <h2>Sugira uma Nova Pizza</h2>
+      <form class="form-sugestao">
+        <label for="tipo">Tipo de Pizza:</label>
+        <select id="tipo" name="tipo" required>
+          <option value="salgada">Salgada</option>
+          <option value="doce">Doce</option>
+        </select>
+  
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" placeholder="Descreva sua pizza..." required></textarea>
+  
+        <fieldset>
+          <legend>Ingredientes Obrigatórios:</legend>
+          <label><input type="checkbox" name="ingredientes" value="queijo"> Queijo</label>
+          <label><input type="checkbox" name="ingredientes" value="molho"> Molho</label>
+          <label><input type="checkbox" name="ingredientes" value="tomate"> Tomate</label>
+          <label><input type="checkbox" name="ingredientes" value="bacon"> Bacon</label>
+        </fieldset>
+  
+        <label for="valor">Valor Sugerido (R$):</label>
+        <input type="number" id="valor" name="valor" min="1" step="0.01" required>
+  
+        <button type="submit">Enviar Sugestão</button>
+      </form>
     </div>
   </section>
 
